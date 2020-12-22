@@ -3,7 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Inspired From  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%%  https://www.reddit.com/r/LaTeX/comments/j9d739/hello_world_in_latex_is_a_lot_cooler/   %%%%%
 %%%%%%%%%%%%%%%% If this doesn't look nice then you may remove it %%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \backgroundsetup{
 scale=1,
 opacity=1,
@@ -11,10 +10,10 @@ angle=0,
 color=black,
 contents={
 \begin{tikzpicture}[color=black, every node/.style={inner sep= 15pt}]
-\node (NW) [anchor=north west] at (current page.north west){\pgfornament[width=2.5cm] {131}};
-\node (NE) [anchor=north east] at (current page.north east){\pgfornament[width=2.5cm, symmetry=v]{131}};
-\node (SW) [anchor=south west] at (current page.south west){\pgfornament[width=2.5cm, symmetry=h]{131}};
-\node (SE) [anchor=south east] at (current page.south east){\pgfornament[width=2.5cm, symmetry=c]{131}};
+\node (NW) [anchor=north west] at (current page.north west){\pgfornament[width=4cm] {41}};
+\node (NE) [anchor=north east] at (current page.north east){\pgfornament[width=4cm, symmetry=v]{41}};
+\node (SW) [anchor=south west] at (current page.south west){\pgfornament[width=4cm, symmetry=h]{41}};
+\node (SE) [anchor=south east] at (current page.south east){\pgfornament[width=4cm, symmetry=c]{41}};
 \foreach \i in {-4,0,4}
 \node[anchor=north,xshift=\i cm] at (current page.north){\pgfornament[scale=0.25,symmetry=v]{71}};
 \foreach \i in {-4,0,4}
@@ -68,11 +67,7 @@ contents={
 
 \vspace{0.5\baselineskip} 
 
-{\scshape   \LARGE Professor\\ } % Editor list
-
-\vspace{0.2\baselineskip} 
-
-\textit{\Large University} 
+\textit{\Large International Centre for Radio Asrtonomy Research} 
 
 \vfill 
 
@@ -82,10 +77,10 @@ contents={
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width = 3cm, height= 3cm]{resource/icon.jpg}%% include the university icon here
+    \includegraphics[width = 3cm, height= 3cm]{Notes/resource/ICRAR_large_logo_colour.png}%% include the university icon here
 \end{figure}
 \vspace{0.3\baselineskip} 
 
 
-{\large Edited by\\  Your name}
+{\large Edited by\\  Nicholas Pritchard}
 \end{titlepage}
