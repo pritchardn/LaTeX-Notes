@@ -1,0 +1,44 @@
+\documentclass{package/notes}
+
+%%%%%%%%%% Default Package %%%%%%%%%%%%%
+\usepackage{package/color-env}
+%%%%%%%%%% %%%%%%%%%%%%%%% %%%%%%%%%%%%%
+
+%%%%%%%%%% Required Packages %%%%%%%%%%%%%
+\usepackage{background}
+\usepackage[object=vectorian]{pgfornament} %% used in title.tex
+\usepackage{calligra} %%% (optional) to make the Title text beautiful 
+
+%%%%%% Optional Packages %%%%%%%
+\usepackage{lettrine} %% for nice looking 
+\usepackage{GoudyIn} %% first Letter of the paragraph
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{lipsum}  %% for dummy text 
+\usepackage{amssymb,amsmath,amsfonts}  %%% for maths
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\LettrineFontHook}{\color{black}\GoudyInfamily{}}
+\LettrineTextFont{\itshape}
+\setcounter{DefaultLines}{3}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Bibliography %%%%%%%%%
+% Required packages are included in notes class
+% Can be tweaked in the notes.cls file itself
+
+\addbibresource{resource/references.bib}
+
+\begin{document}
+
+\input{Notes/title.tex}
+
+\newpage
+
+\backgroundsetup{contents={}} %% to remove background and watermark from other pages
+\tableofcontents
+
+\printbibliography[heading=bibintoc,title={\centering Bibliography}]
+
+\end{document}
