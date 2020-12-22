@@ -16,7 +16,7 @@ sorting=none
 \RequirePackage{geometry}
 \geometry{margin=1.5in}
 \hypersetup{
-	colorlinks=true,
+	colorlinks=false,
 	linkcolor=blue,
 	filecolor=magenta,      
 	urlcolor=cyan,
